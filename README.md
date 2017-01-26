@@ -24,4 +24,10 @@ Check solo.rb
 
 Then to run it with solo.. extract it to the path specified in solo.rb file (/etc/chef/chef-solo-supermarket)
 
+To run the playbook:
+
+sudo chef-solo --config solo.rb
+
+Note: solo.rb now contains the run list as well.
+
 

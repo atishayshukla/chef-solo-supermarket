@@ -11,3 +11,4 @@ cookbook_path [
   getPath('cookbooks'),
   getPath('vendor-cookbooks')
 ]
+json_attribs relative('run-list.json')
