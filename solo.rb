@@ -1,4 +1,13 @@
+# Attempt to make the path not hardcoded - part of best practice
+
+# Creating function which will take the file path and return the absolute path for it.
+
+def getPath(target)
+  File.expand_path(File.join(File.dirname(__FILE__), target))
+end
+
+# Replacing the values with new function.
 cookbook_path [
-  "/etc/chef/chef-solo-supermarket/cookbooks",
-  "/etc/chef/chef-solo-supermarket/vendor-cookbooks"
+  getPath('cookbooks'),
+  getPath('vendor-cookbooks')
 ]
