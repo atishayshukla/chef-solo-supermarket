@@ -28,6 +28,8 @@ To run the playbook:
 
 sudo chef-solo --config solo.rb
 
+sudo chef-client -z -c solo.rb
+
 Note: solo.rb now contains the run list as well.
 
 
