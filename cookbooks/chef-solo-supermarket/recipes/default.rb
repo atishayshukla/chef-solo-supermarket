@@ -4,8 +4,11 @@
 #
 # Copyright (c) 2017 The Authors, All Rights Reserved.
 
-# Install Java
+# Setting Java version
 node.default['java']['jdk_version'] = '7'
+
+# Install Java
+include_recipe 'java'
 
 # Install curl
 package 'curl' do
