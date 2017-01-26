@@ -1,0 +1,9 @@
+source 'https://supermarket.chef.io'
+
+metadata
+
+# Grouping 3rd party cookbooks in vendor group
+
+group :vendor do
+  cookbook 'java', '~> 1.46.0'  
+end
