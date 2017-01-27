@@ -5,7 +5,7 @@
 # Copyright (c) 2017 The Authors, All Rights Reserved.
 
 # Setting Java version
-node.default['java']['jdk_version'] = '7'
+# node.default['java']['jdk_version'] = '7'
 
 # Install Java
 include_recipe 'java'
