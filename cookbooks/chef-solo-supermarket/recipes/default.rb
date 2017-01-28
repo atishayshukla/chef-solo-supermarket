@@ -4,13 +4,10 @@
 #
 # Copyright (c) 2017 The Authors, All Rights Reserved.
 
-# Setting Java version
-# node.default['java']['jdk_version'] = '7'
 
 # Install Java
-include_recipe 'java'
+include_recipe 'chef-solo-supermarket::java_install'
 
-# Install curl
-package 'curl' do
-  action :install
-end
+# Install Jenkins
+include_recipe 'chef-solo-supermarket::jenkins_install'
+
