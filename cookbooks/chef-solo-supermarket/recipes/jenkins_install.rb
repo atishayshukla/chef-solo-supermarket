@@ -1,5 +1,5 @@
 # Including jenkins installation recipe from supermarket
-include_recipe 'jenkins-server::default'
+include_recipe 'jenkins::master'
 
 # Making the default security disable and configuring admin for instance.
 #jenkins_script 'activate global security' do
